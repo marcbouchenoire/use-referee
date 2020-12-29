@@ -1,15 +1,12 @@
 import { MutableRefObject, useRef } from "react"
-import { isFunction } from "../guards"
+import { Lazy } from "../types"
+import { applyLazyRef } from "../utils"
 
-export const useLazyRef = <T>(initialValue: T | (() => T)) => {
+export const useLazyRef = <T>(initialValue: Lazy<T>) => {
   const ref: MutableRefObject<T | null> = useRef(null)
 
   if (ref.current === null) {
-    if (isFunction(initialValue)) {
-      ref.current = initialValue()
-    } else {
-      ref.current = initialValue
-    }
+    applyLazyRef(ref, initialValue)
   }
 
   return ref.current
