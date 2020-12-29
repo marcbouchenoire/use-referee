@@ -3,9 +3,9 @@ import { Lazy } from "../types"
 import { applyLazyRef } from "../utils"
 
 export const useLazyRef = <T>(value: Lazy<T>) => {
-  const ref: MutableRefObject<T | null> = useRef(null)
+  const ref: MutableRefObject<T | undefined> = useRef(undefined)
 
-  if (ref.current === null) {
+  if (ref.current === undefined) {
     applyLazyRef(ref, value)
   }
 
