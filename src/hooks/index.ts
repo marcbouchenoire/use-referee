@@ -1,3 +1,3 @@
-export { useLatestRef } from "./use-latest-ref"
-export { useLazyRef } from "./use-lazy-ref"
-export { usePreviousRef } from "./use-previous-ref"
+export { useConstant } from "./use-constant"
+export { useLatest } from "./use-latest"
+export { usePrevious } from "./use-previous"

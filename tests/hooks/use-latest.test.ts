@@ -1,16 +1,13 @@
 import { renderHook } from "@testing-library/react-hooks"
-import { useLatestRef } from "../../src/hooks"
+import { useLatest } from "../../src/hooks"
 import { number } from "../constants"
 import { createRef } from "../helpers"
 
-describe("useLatestRef", () => {
+describe("useLatest", () => {
   test("should return a ref that mutates when its given value changes", () => {
-    const { result, rerender } = renderHook(
-      ({ value }) => useLatestRef(value),
-      {
-        initialProps: { value: 0 }
-      }
-    )
+    const { result, rerender } = renderHook(({ value }) => useLatest(value), {
+      initialProps: { value: 0 }
+    })
 
     rerender({ value: number })
 
