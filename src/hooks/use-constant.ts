@@ -9,5 +9,5 @@ export const useConstant = <T>(value: Lazy<T>) => {
     applyLazyRef(ref, value)
   }
 
-  return ref.current
+  return (ref as MutableRefObject<T>).current
 }
