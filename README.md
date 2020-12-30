@@ -18,9 +18,7 @@ yarn add use-referee
 npm install use-referee
 ```
 
-## Usage
-
-#### `use-constant`
+## `use-constant`
 
 ```tsx
 useConstant<T>(value: Lazy<T>) => T
@@ -28,7 +26,7 @@ useConstant<T>(value: Lazy<T>) => T
 
 Given a (lazy) variable, `useConstant` returns it as is while never updating or mutating it on subsequent renders.
 
-##### Example
+### Usage
 
 Import `useConstant`.
 
@@ -48,7 +46,7 @@ const id = useConstant(() => uuid())
  */
 ```
 
-#### `use-latest`
+## `use-latest`
 
 ```tsx
 useLatest<T>(value: T): MutableRefObject<T>
@@ -56,7 +54,7 @@ useLatest<T>(value: T): MutableRefObject<T>
 
 Given a variable, `useLatest` returns a ref which reflects its latest value—mutating itself on variable changes to do so.
 
-##### Example
+### Usage
 
 Import `useLatest`.
 
@@ -93,7 +91,7 @@ useEffect(() => {
 }, [])
 ```
 
-#### `use-previous`
+## `use-previous`
 
 ```tsx
 usePrevious<T>(value: T) => T | undefined
@@ -101,7 +99,7 @@ usePrevious<T>(value: T) => T | undefined
 
 Given a variable, `usePrevious` returns its previous value or `undefined` before an initial change has happened.
 
-##### Example
+### Usage
 
 Import `usePrevious`.
 
