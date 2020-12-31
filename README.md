@@ -18,7 +18,7 @@ yarn add use-referee
 npm install use-referee
 ```
 
-## `use-constant`
+## `useConstant`
 
 ```tsx
 useConstant<T>(value: Lazy<T>) => T
@@ -46,7 +46,7 @@ const id = useConstant(() => uuid())
  */
 ```
 
-## `use-latest`
+## `useLatest`
 
 ```tsx
 useLatest<T>(value: T): MutableRefObject<T>
@@ -91,7 +91,7 @@ useEffect(() => {
 }, [])
 ```
 
-## `use-previous`
+## `usePrevious`
 
 ```tsx
 usePrevious<T>(value: T) => T | undefined
@@ -136,7 +136,7 @@ setState(false)
  */
 ```
 
-## `use-refs`
+## `useRefs`
 
 ```tsx
 useRefs<T>(...refs: Ref<T>[]) => RefCallback<T>
