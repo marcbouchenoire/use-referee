@@ -1,2 +1,2 @@
-export { useConstant, useLatest, usePrevious } from "./hooks"
-export { applyLazyRef } from "./utils"
+export { useConstant, useLatest, usePrevious, useRefs } from "./hooks"
+export { applyLazyRef, mergeRefs } from "./utils"
