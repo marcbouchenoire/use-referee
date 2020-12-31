@@ -107,7 +107,7 @@ Import `usePrevious`.
 import { usePrevious } from "use-referee"
 ```
 
-Pass it a variable and get its previous value.
+Pass it a variable and get its previous value in return.
 
 ```tsx
 const [state, setState] = useState(false)
@@ -133,5 +133,36 @@ setState(false)
  * 💬
  *
  * → previous: true
+ */
+```
+
+## `use-refs`
+
+```tsx
+useRefs<T>(...refs: Ref<T>[]) => RefCallback<T>
+```
+
+Given any number of refs, `useRefs` returns a single callback ref that merges them all.
+
+### Usage
+
+Import `useRefs`.
+
+```tsx
+import { useRefs } from "use-referee"
+```
+
+Pass it multiple refs and get a single ref in return.
+
+```tsx
+const refs = useRefs(ref, forwardedRef)
+
+return <div ref={refs} />
+
+/**
+ * 💬
+ *
+ * → ref:          { current: <div /> }
+ * → forwardedRef: { current: <div /> }
  */
 ```
