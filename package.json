@@ -25,7 +25,7 @@
   "scripts": {
     "build": "microbundle --tsconfig tsconfig.build.json",
     "clean": "jest --clearCache && rimraf node_modules",
-    "lint": "eslint src --fix",
+    "lint": "eslint '{src,tests}/**/*.{ts,tsx}' --fix",
     "prepare": "rimraf dist && yarn build",
     "release": "yarn login && np",
     "test": "jest"
