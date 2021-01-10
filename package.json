@@ -21,7 +21,8 @@
   "module": "./dist/use-referee.module.js",
   "exports": "./dist/use-referee.modern.js",
   "esmodule": "./dist/use-referee.modern.js",
-  "typings": "./dist/use-referee.d.ts",
+  "esnext": "./dist/use-referee.modern.js",
+  "types": "./dist/use-referee.d.ts",
   "scripts": {
     "build": "microbundle --tsconfig tsconfig.build.json",
     "clean": "jest --clearCache && rimraf node_modules",
