@@ -8,7 +8,7 @@ describe("usePrevious", () => {
       initialProps: { value: 0 }
     })
 
-    expect(result.current).toBe(undefined)
+    expect(result.current).toBeUndefined()
 
     rerender({ value: number })
 

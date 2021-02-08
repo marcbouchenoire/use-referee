@@ -1,6 +1,6 @@
-export const boolean = true
-export const number = 2
-export const string = "lorem"
+export const boolean = true as boolean
+export const number = 2 as number
+export const string = "lorem" as string
 
 export const array = [string, number]
 export const fun = () => {}
