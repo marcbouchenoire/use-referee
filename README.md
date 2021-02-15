@@ -24,7 +24,7 @@ npm install use-referee
 useConstant<T>(value: Lazy<T>) => T
 ```
 
-Given a (lazy) variable, `useConstant` returns it as is while never updating or mutating it on subsequent renders.
+Given a (lazy) variable, `useConstant` will return it as is while never updating or mutating it on subsequent changes.
 
 ### Usage
 
@@ -39,11 +39,7 @@ Declare a constant from an initial (lazy) value.
 ```tsx
 const id = useConstant(() => uuid())
 
-/**
- * 💬
- *
- * → id: 123e4567-e89b-12d3-a456-426614174000
- */
+// id: "123e4567-e89b-12d3-a456-426614174000"
 ```
 
 ## `useLatest`
@@ -52,7 +48,7 @@ const id = useConstant(() => uuid())
 useLatest<T>(value: T): MutableRefObject<T>
 ```
 
-Given a variable, `useLatest` returns a ref which reflects its latest value—mutating itself on variable changes to do so.
+Given a variable, `useLatest` will return a ref which reflects its latest value—mutating itself on variable changes to do so.
 
 ### Usage
 
@@ -68,26 +64,16 @@ Pass it a variable and get a mutating ref of its latest value in return.
 const [state, setState] = useState(false)
 const latest = useLatest(state)
 
-/**
- * 💬
- *
- * → latest: { current: false }
- */
+// latest: { current: false }
+```
 
+Being a ref, `latest` will always reflect the latest `state` value even when omitted from dependency lists (e.g. `[]`).
+
+```tsx
 setState(true)
 
-/**
- * 🧱
- *
- * Being a ref, `latest` will always reflect the latest `state`
- * value even when omitted from dependency lists (e.g. `[]`).
- */
 useEffect(() => {
-  /**
-   * 💬
-   *
-   * → latest: { current: true }
-   */
+  // latest: { current: true }
 }, [])
 ```
 
@@ -97,7 +83,7 @@ useEffect(() => {
 usePrevious<T>(value: T) => T | undefined
 ```
 
-Given a variable, `usePrevious` returns its previous value or `undefined` before an initial change has happened.
+Given a variable, `usePrevious` will return its previous value or `undefined` before an initial change has happened.
 
 ### Usage
 
@@ -113,27 +99,15 @@ Pass it a variable and get its previous value in return.
 const [state, setState] = useState(false)
 const previous = usePrevious(state)
 
-/**
- * 💬
- *
- * → previous: undefined
- */
+// previous: undefined
 
 setState(true)
 
-/**
- * 💬
- *
- * → previous: false
- */
+// previous: false
 
 setState(false)
 
-/**
- * 💬
- *
- * → previous: true
- */
+// previous: true
 ```
 
 ## `useRefs`
@@ -142,7 +116,7 @@ setState(false)
 useRefs<T>(...refs: Ref<T>[]) => RefCallback<T>
 ```
 
-Given any number of refs, `useRefs` returns a single callback ref that merges them all.
+Given any number of refs, `useRefs` will return a single callback ref that merges them all.
 
 ### Usage
 
@@ -159,10 +133,6 @@ const refs = useRefs(ref, forwardedRef)
 
 return <div ref={refs} />
 
-/**
- * 💬
- *
- * → ref:          { current: <div /> }
- * → forwardedRef: { current: <div /> }
- */
+// ref: { current: <div /> }
+// forwardedRef: { current: <div /> }
 ```
