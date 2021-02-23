@@ -6,13 +6,26 @@
 
 ## Installation
 
-#### With yarn
+#### Skypack
+
+```html
+<script type="module">
+  import {
+    useConstant,
+    useLatest,
+    usePrevious,
+    useRefs
+  } from "https://cdn.skypack.dev/use-referee"
+</script>
+```
+
+#### Yarn
 
 ```sh
 yarn add use-referee
 ```
 
-#### With npm
+#### npm
 
 ```sh
 npm install use-referee
