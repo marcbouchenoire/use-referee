@@ -22,7 +22,7 @@
   "exports": "./dist/use-referee.modern.js",
   "esmodule": "./dist/use-referee.modern.js",
   "esnext": "./dist/use-referee.modern.js",
-  "types": "./dist/use-referee.d.ts",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "microbundle --tsconfig tsconfig.build.json",
     "clean": "jest --clearCache && rimraf node_modules",
