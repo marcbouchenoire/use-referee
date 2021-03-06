@@ -1,7 +1,7 @@
 import { renderHook } from "@testing-library/react-hooks"
 import { RefCallback } from "react"
 import { isSomething } from "../../src/guards"
-import { useRefs } from "../../src/hooks"
+import { useRefs } from "../../src/hooks/use-refs"
 import { number } from "../constants"
 import { createRef } from "../helpers"
 

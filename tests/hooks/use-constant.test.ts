@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react-hooks"
-import { useConstant } from "../../src/hooks"
+import { useConstant } from "../../src/hooks/use-constant"
 import { number, string } from "../constants"
 
 const value = number

@@ -1,6 +1,6 @@
 import { RefCallback } from "react"
 import { isSomething } from "../../src/guards"
-import { applyRef } from "../../src/utils"
+import { applyRef } from "../../src/utils/apply-ref"
 import { number } from "../constants"
 import { createRef } from "../helpers"
 

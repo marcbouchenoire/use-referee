@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react-hooks"
-import { useLatest } from "../../src/hooks"
+import { useLatest } from "../../src/hooks/use-latest"
 import { number } from "../constants"
 import { createRef } from "../helpers"
 

@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react-hooks"
-import { usePrevious } from "../../src/hooks"
+import { usePrevious } from "../../src/hooks/use-previous"
 import { number } from "../constants"
 
 describe("usePrevious", () => {

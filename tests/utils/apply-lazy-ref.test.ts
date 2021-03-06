@@ -1,4 +1,4 @@
-import { applyLazyRef } from "../../src/utils"
+import { applyLazyRef } from "../../src/utils/apply-lazy-ref"
 import { number, string } from "../constants"
 import { createRef } from "../helpers"
 
