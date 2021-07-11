@@ -1,5 +1,4 @@
 module.exports = {
-  transform: {
-    "^.+\\.(t|j)sx?$": "@swc-node/jest"
-  }
+  preset: "ts-jest",
+  testEnvironment: "jsdom"
 }
