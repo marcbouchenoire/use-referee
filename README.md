@@ -2,7 +2,7 @@
 
 ⚽ A collection of ref-related hooks.
 
-[![npm](https://img.shields.io/npm/v/use-referee?color=%2385f)](https://www.npmjs.com/package/use-referee) [![gzipped](https://img.shields.io/bundlephobia/minzip/use-referee?label=gzipped&color=%23d5e)](https://www.npmjs.com/package/use-referee) [![license](https://img.shields.io/github/license/bouchenoiremarc/use-referee?color=%23e48)](https://github.com/bouchenoiremarc/use-referee/blob/main/LICENSE)
+[![build](https://github.com/bouchenoiremarc/use-referee/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/bouchenoiremarc/use-referee/actions/workflows/ci.yml) [![npm](https://img.shields.io/npm/v/use-referee?color=%230cf)](https://www.npmjs.com/package/use-referee) [![gzipped](https://img.shields.io/bundlephobia/minzip/use-referee?label=gzipped&color=%2385f)](https://www.npmjs.com/package/use-referee) [![license](https://img.shields.io/github/license/bouchenoiremarc/use-referee?color=%23e4b)](https://github.com/bouchenoiremarc/use-referee/blob/main/LICENSE)
 
 ## Installation
 
