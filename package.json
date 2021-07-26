@@ -17,11 +17,15 @@
   "sideEffects": false,
   "source": "./src/index.ts",
   "main": "./dist/use-referee.js",
-  "umd:main": "./dist/use-referee.umd.js",
+  "unpkg": "./dist/use-referee.umd.js",
   "module": "./dist/use-referee.module.js",
-  "exports": "./dist/use-referee.modern.js",
-  "esmodule": "./dist/use-referee.modern.js",
-  "esnext": "./dist/use-referee.modern.js",
+  "exports": {
+    ".": {
+      "require": "./dist/use-referee.js",
+      "import": "./dist/use-referee.modern.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "types": "./dist/index.d.ts",
   "lint-staged": {
     "**/*.{ts,tsx}": [
