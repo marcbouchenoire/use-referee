@@ -1,6 +1,6 @@
 {
   "name": "use-referee",
-  "version": "1.1.3",
+  "version": "1.2.0",
   "description": "A collection of ref-related hooks.",
   "author": "Marc Bouchenoire",
   "license": "MIT",
