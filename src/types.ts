@@ -5,7 +5,7 @@ export type Unpack<T> = T extends (infer U)[] ? U : T
 export type Lazy<T> = T | (() => T)
 
 export type Ref<T> = NonNullable<
-  MutableRefObject<T> | Exclude<LegacyRef<T>, string | RefObject<T>>
+  Exclude<LegacyRef<T>, RefObject<T> | string> | MutableRefObject<T>
 >
 
 export type PlainFunction<P = any, R = any> = (...args: P[]) => R
