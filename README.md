@@ -8,32 +8,30 @@
 
 #### Skypack
 
-```html
-<script type="module">
-  import {
-    useConstant,
-    useLatest,
-    usePrevious,
-    useRefs
-  } from "https://cdn.skypack.dev/use-referee"
-</script>
+```javascript
+import {
+  useConstant,
+  useLatest,
+  usePrevious,
+  useRefs
+} from "https://cdn.skypack.dev/use-referee"
 ```
 
 #### Yarn
 
-```sh
+```bash
 yarn add use-referee
 ```
 
 #### npm
 
-```sh
+```bash
 npm install use-referee
 ```
 
 ## `useConstant`
 
-```tsx
+```typescript
 useConstant<T>(value: Lazy<T>) => T
 ```
 
@@ -43,13 +41,13 @@ Given a (lazy) variable, `useConstant` will return it as is while never updating
 
 Import `useConstant`.
 
-```tsx
+```typescript
 import { useConstant } from "use-referee"
 ```
 
 Declare a constant from an initial (lazy) value.
 
-```tsx
+```typescript
 const id = useConstant(() => uuid())
 
 // id: "123e4567-e89b-12d3-a456-426614174000"
@@ -57,7 +55,7 @@ const id = useConstant(() => uuid())
 
 ## `useLatest`
 
-```tsx
+```typescript
 useLatest<T>(value: T): MutableRefObject<T>
 ```
 
@@ -67,13 +65,13 @@ Given a variable, `useLatest` will return a ref which reflects its latest valueâ
 
 Import `useLatest`.
 
-```tsx
+```typescript
 import { useLatest } from "use-referee"
 ```
 
 Pass it a variable and get a mutating ref of its latest value in return.
 
-```tsx
+```typescript
 const [state, setState] = useState(false)
 const latest = useLatest(state)
 
@@ -82,7 +80,7 @@ const latest = useLatest(state)
 
 Being a ref, `latest` will always reflect the latest `state` value even when omitted from dependency lists (e.g. `[]`).
 
-```tsx
+```typescript
 setState(true)
 
 useEffect(() => {
@@ -92,7 +90,7 @@ useEffect(() => {
 
 ## `usePrevious`
 
-```tsx
+```typescript
 usePrevious<T>(value: T) => T | undefined
 ```
 
@@ -102,13 +100,13 @@ Given a variable, `usePrevious` will return its previous value or `undefined` be
 
 Import `usePrevious`.
 
-```tsx
+```typescript
 import { usePrevious } from "use-referee"
 ```
 
 Pass it a variable and get its previous value in return.
 
-```tsx
+```typescript
 const [state, setState] = useState(false)
 const previous = usePrevious(state)
 
@@ -125,7 +123,7 @@ setState(false)
 
 ## `useRefs`
 
-```tsx
+```typescript
 useRefs<T>(...refs: Ref<T>[]) => RefCallback<T>
 ```
 
@@ -135,7 +133,7 @@ Given any number of refs, `useRefs` will return a single callback ref that merge
 
 Import `useRefs`.
 
-```tsx
+```typescript
 import { useRefs } from "use-referee"
 ```
 
