@@ -1,25 +1,27 @@
 import { renderHook } from "@testing-library/react-hooks"
+import * as assert from "uvu/assert"
 import { usePrevious } from "../../src/hooks/use-previous"
 import { number } from "../constants"
+import { describe } from "../helpers"
 
-describe("usePrevious", () => {
-  test("should return its previous value", () => {
+describe("usePrevious", (it) => {
+  it("should return its previous value", () => {
     const { result, rerender } = renderHook(({ value }) => usePrevious(value), {
       initialProps: { value: 0 }
     })
 
-    expect(result.current).toBeUndefined()
+    assert.type(result.current, "undefined")
 
     rerender({ value: number })
 
-    expect(result.current).toBe(0)
+    assert.equal(result.current, 0)
 
     rerender()
 
-    expect(result.current).toBe(number)
+    assert.equal(result.current, number)
 
     rerender()
 
-    expect(result.current).toBe(number)
+    assert.equal(result.current, number)
   })
 })
