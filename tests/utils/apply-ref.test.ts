@@ -21,4 +21,27 @@ describe("applyRef", (it) => {
     assert.equal(ref, createRef(number))
     assert.equal(callbackRefValue, number)
   })
+
+  it("shouldn't apply a nullish value", () => {
+    const ref = createRef(true)
+
+    applyRef(ref, false)
+    applyRef(ref, undefined)
+    applyRef(ref, null)
+
+    assert.equal(ref, createRef(false))
+  })
+
+  /* eslint-disable @typescript-eslint/ban-ts-comment */
+  it("shouldn't throw if the provided ref doesn't exist", () => {
+    const ref = undefined
+
+    try {
+      // @ts-ignore
+      applyRef(ref, number)
+    } catch {
+      assert.unreachable()
+    }
+  })
+  /* eslint-enable @typescript-eslint/ban-ts-comment */
 })

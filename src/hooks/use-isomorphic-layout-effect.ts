@@ -1,4 +1,10 @@
 import { useEffect, useLayoutEffect } from "react"
 
-export const useIsomorphicLayoutEffect =
-  typeof window !== "undefined" ? useLayoutEffect : useEffect
+export function createIsomorphicFunction<T>(server: T, client: T) {
+  return typeof window !== "undefined" ? client : server
+}
+
+export const useIsomorphicLayoutEffect = createIsomorphicFunction(
+  useEffect,
+  useLayoutEffect
+)
