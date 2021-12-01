@@ -2,14 +2,14 @@
 
 ⚽ A collection of ref-related hooks.
 
-[![build](https://img.shields.io/github/workflow/status/bouchenoiremarc/use-referee/CI)](https://github.com/bouchenoiremarc/use-referee/actions/workflows/ci.yml)
+[![build](https://img.shields.io/github/workflow/status/marcbouchenoire/use-referee/CI)](https://github.com/marcbouchenoire/use-referee/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/use-referee?color=%230cf)](https://www.npmjs.com/package/use-referee)
 [![size](https://img.shields.io/bundlephobia/minzip/use-referee?label=size&color=%2385f)](https://bundlephobia.com/package/use-referee)
-[![coverage](https://img.shields.io/codecov/c/github/bouchenoiremarc/use-referee?color=%23e4b)](https://codecov.io/gh/bouchenoiremarc/use-referee)
-[![license](https://img.shields.io/github/license/bouchenoiremarc/use-referee?color=%23f81)](https://github.com/bouchenoiremarc/use-referee/blob/main/LICENSE)
+[![coverage](https://img.shields.io/codecov/c/github/marcbouchenoire/use-referee?color=%23e4b)](https://codecov.io/gh/marcbouchenoire/use-referee)
+[![license](https://img.shields.io/github/license/marcbouchenoire/use-referee?color=%23f81)](https://github.com/marcbouchenoire/use-referee/blob/main/LICENSE)
 
 - 🗜️ **Tiny**: Tree-shakeable and around **900 bytes** on modern platforms
-- 🧪 **Reliable**: Fully tested with [100% code coverage](https://codecov.io/gh/bouchenoiremarc/use-referee)
+- 🧪 **Reliable**: Fully tested with [100% code coverage](https://codecov.io/gh/marcbouchenoire/use-referee)
 - 📦 **Typed**: Written in [TypeScript](https://www.typescriptlang.org/) and includes definitions out-of-the-box
 - 💨 **Zero dependencies**
 

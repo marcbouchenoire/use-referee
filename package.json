@@ -4,7 +4,7 @@
   "description": "A collection of ref-related hooks.",
   "author": "Marc Bouchenoire",
   "license": "MIT",
-  "repository": "https://github.com/bouchenoiremarc/use-referee",
+  "repository": "https://github.com/marcbouchenoire/use-referee",
   "keywords": [
     "react",
     "hook",
@@ -32,7 +32,7 @@
     "./package.json": "./package.json"
   },
   "types": "./dist/index.d.ts",
-  "prettier": "@bouchenoiremarc/prettier-config",
+  "prettier": "@marcbouchenoire/prettier-config",
   "lint-staged": {
     "**/*.mjs": [
       "eslint --fix",
@@ -65,8 +65,8 @@
     "test:coverage": "nyc --temp-dir=.nyc.log --include=src yarn test && nyc report --temp-dir=.nyc.log --reporter=lcov"
   },
   "devDependencies": {
-    "@bouchenoiremarc/eslint-config": "^2.2.1",
-    "@bouchenoiremarc/prettier-config": "^1.1.0",
+    "@marcbouchenoire/eslint-config": "^2.2.1",
+    "@marcbouchenoire/prettier-config": "^1.1.0",
     "@testing-library/react-hooks": "^7.0.2",
     "@types/react": "^17.0.35",
     "eslint": "^8.3.0",
