@@ -10,6 +10,12 @@ export function createIsomorphicFunction<T>(server: T, client: T) {
   return typeof window !== "undefined" ? client : server
 }
 
+/**.
+ * Run a layout effect in the browser and a normal effect on the server.
+ *
+ * @param effect - A function that can return a cleanup function.
+ * @param [dependencies] - If present, the effect will only activate if the values in the list change.
+ */
 export const useIsomorphicLayoutEffect = createIsomorphicFunction(
   useEffect,
   useLayoutEffect
