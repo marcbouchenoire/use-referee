@@ -4,7 +4,7 @@ import { useIsomorphicLayoutEffect } from "./use-isomorphic-layout-effect"
 /**
  * Return the latest value of a variable as a ref.
  *
- * @param value -.The variable to get the latest value of.
+ * @param value - The variable to get the latest value of.
  * @returns The latest value as a ref.
  *
  * @example

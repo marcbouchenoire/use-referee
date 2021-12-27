@@ -4,7 +4,7 @@ import { useIsomorphicLayoutEffect } from "./use-isomorphic-layout-effect"
 /**
  * Return the previous value of a variable.
  *
- * @param value -.The variable to get the previous value of.
+ * @param value - The variable to get the previous value of.
  * @returns The previous value.
  *
  * @example
