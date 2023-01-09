@@ -1,5 +1,6 @@
-import { RefCallback, useCallback } from "react"
-import { Ref } from "../types"
+import type { RefCallback } from "react"
+import { useCallback } from "react"
+import type { Ref } from "../types"
 import { mergeRefs } from "../utils/merge-refs"
 
 /**

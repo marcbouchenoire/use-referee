@@ -1,5 +1,5 @@
 import { isFunction, isSomething } from "../guards"
-import { Ref } from "../types"
+import type { Ref } from "../types"
 
 /**
  * Apply a value to a ref.

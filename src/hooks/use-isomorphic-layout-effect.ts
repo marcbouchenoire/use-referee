@@ -7,7 +7,7 @@ import { useEffect, useLayoutEffect } from "react"
  * @param client - The value on the client.
  */
 export function createIsomorphicFunction<T>(server: T, client: T) {
-  return typeof window !== "undefined" ? client : server
+  return typeof window === "undefined" ? server : client
 }
 
 /**

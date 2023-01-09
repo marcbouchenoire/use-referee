@@ -1,4 +1,6 @@
-import { RefCallback } from "react"
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+
+import type { RefCallback } from "react"
 import * as assert from "uvu/assert"
 import { isSomething } from "../../src/guards"
 import { applyRef } from "../../src/utils/apply-ref"
@@ -32,7 +34,6 @@ describe("applyRef", (it) => {
     assert.equal(ref, createRef(false))
   })
 
-  /* eslint-disable @typescript-eslint/ban-ts-comment */
   it("shouldn't throw if the provided ref doesn't exist", () => {
     const ref = undefined
 
@@ -43,5 +44,4 @@ describe("applyRef", (it) => {
       assert.unreachable()
     }
   })
-  /* eslint-enable @typescript-eslint/ban-ts-comment */
 })

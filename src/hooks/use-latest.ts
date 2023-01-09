@@ -1,4 +1,5 @@
-import { MutableRefObject, useRef } from "react"
+import type { MutableRefObject } from "react"
+import { useRef } from "react"
 import { useIsomorphicLayoutEffect } from "./use-isomorphic-layout-effect"
 
 /**

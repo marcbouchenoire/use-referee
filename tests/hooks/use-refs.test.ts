@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react-hooks"
-import { RefCallback } from "react"
+import type { RefCallback } from "react"
 import * as assert from "uvu/assert"
 import { isSomething } from "../../src/guards"
 import { useRefs } from "../../src/hooks/use-refs"
