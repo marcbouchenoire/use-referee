@@ -2,7 +2,7 @@
 
 ⚽ A collection of ref-related hooks.
 
-[![build](https://img.shields.io/github/workflow/status/marcbouchenoire/use-referee/CI)](https://github.com/marcbouchenoire/use-referee/actions/workflows/ci.yml)
+[![build](https://img.shields.io/github/actions/workflow/status/marcbouchenoire/use-referee/.github/workflows/ci.yml)](https://github.com/marcbouchenoire/use-referee/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/use-referee?color=%230cf)](https://www.npmjs.com/package/use-referee)
 [![size](https://img.shields.io/bundlephobia/minzip/use-referee?label=size&color=%2385f)](https://bundlephobia.com/package/use-referee)
 [![coverage](https://img.shields.io/codecov/c/github/marcbouchenoire/use-referee?color=%23e4b)](https://codecov.io/gh/marcbouchenoire/use-referee)
