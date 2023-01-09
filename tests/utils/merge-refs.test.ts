@@ -1,4 +1,4 @@
-import { RefCallback } from "react"
+import type { RefCallback } from "react"
 import * as assert from "uvu/assert"
 import { isSomething } from "../../src/guards"
 import { mergeRefs } from "../../src/utils/merge-refs"

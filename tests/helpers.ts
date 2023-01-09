@@ -1,5 +1,6 @@
-import { MutableRefObject } from "react"
-import { Test, suite } from "uvu"
+import type { MutableRefObject } from "react"
+import type { Test } from "uvu"
+import { suite } from "uvu"
 
 type Describer = (test: Test) => Promise<void> | void
 

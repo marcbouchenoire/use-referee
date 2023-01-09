@@ -1,4 +1,4 @@
-import { LegacyRef, MutableRefObject, RefObject } from "react"
+import type { LegacyRef, MutableRefObject, RefObject } from "react"
 
 export type Unpack<T> = T extends (infer U)[] ? U : T
 

@@ -1,6 +1,6 @@
-import { MutableRefObject } from "react"
+import type { MutableRefObject } from "react"
 import { isFunction } from "../guards"
-import { Lazy } from "../types"
+import type { Lazy } from "../types"
 
 /**
  * Lazily apply a value to a ref.

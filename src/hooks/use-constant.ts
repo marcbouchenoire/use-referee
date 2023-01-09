@@ -1,5 +1,6 @@
-import { MutableRefObject, useRef } from "react"
-import { Lazy } from "../types"
+import type { MutableRefObject } from "react"
+import { useRef } from "react"
+import type { Lazy } from "../types"
 import { applyLazyRef } from "../utils/apply-lazy-ref"
 
 /**
