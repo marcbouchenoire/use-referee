@@ -5,6 +5,7 @@ specifiers:
   '@marcbouchenoire/eslint-config': ^2.8.1
   '@marcbouchenoire/prettier-config': ^1.1.0
   '@testing-library/react-hooks': ^8.0.1
+  '@types/node': ^18.11.18
   '@types/react': ^18.0.26
   eslint: ^8.31.0
   husky: 4.3.8
@@ -24,6 +25,7 @@ devDependencies:
   '@marcbouchenoire/eslint-config': 2.8.1_z6jn4luhndly6szzkk2fv4o2bi
   '@marcbouchenoire/prettier-config': 1.1.0_prettier@2.8.2
   '@testing-library/react-hooks': 8.0.1_rf5j34zi4rdobktbezexe3agvy
+  '@types/node': 18.11.18
   '@types/react': 18.0.26
   eslint: 8.31.0
   husky: 4.3.8
