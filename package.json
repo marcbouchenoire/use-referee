@@ -60,11 +60,14 @@
     "lint:prettier": "pnpm prettier '**/*.{mjs,ts,tsx,json,md,yml}'",
     "lint:tsc": "tsc --project tsconfig.json",
     "prepublishOnly": "pnpm build",
-    "release": "pnpm login && np",
     "test": "uvu --require tsm tests",
-    "test:coverage": "nyc --temp-dir=.nyc.log --include=src pnpm test && nyc report --temp-dir=.nyc.log --reporter=lcov"
+    "test:coverage": "nyc --temp-dir=.nyc.log --include=src pnpm test && nyc report --temp-dir=.nyc.log --reporter=lcov",
+    "change": "pnpm changeset",
+    "bump": "pnpm changeset version && pnpm install",
+    "release": "pnpm test && pnpm publish -r"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "@marcbouchenoire/eslint-config": "^2.8.1",
     "@marcbouchenoire/prettier-config": "^1.1.0",
     "@testing-library/react-hooks": "^8.0.1",
@@ -73,7 +76,6 @@
     "husky": "4.3.8",
     "microbundle": "^0.15.1",
     "nano-staged": "^0.8.0",
-    "np": "^7.6.3",
     "nyc": "^15.1.0",
     "prettier": "^2.8.2",
     "react": "^18.2.0",
